@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>AGRIBIZ TRADING CENTER</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"/>
+    <link rel="stylesheet" href="project_1.css">
+    <script src="project_1.js"></script>
+</head>
+<h1 id = heading ><img src="AGRIBIZ_LOGO_2.png" alt=" " style="height: 60px" width="60px"><b><u>AGRIBIZ TRADING CENTER</u></b><img src="AGRIBIZ_LOGO_2.png" alt=" " style="height: 60px" width="60px"></h1>
+<body>
+<header>
+    <nav>
+        <p>
+            <a href="project_1.html" id = demo_1 >Home(<i class="glyphicon glyphicon-home"></i>)&nbsp;&nbsp;</a>
+            <a href="project_1_headers_aboutus.html" id = demo_2 target="_blank">About us (<i class="glyphicon glyphicon-globe"></i>)</a>&nbsp;&nbsp;
+            <a href="project_1_headers_ContactUs.html" id = demo_3 target="_blank">Contact Us (<i class="glyphicon glyphicon-user"></i>)</a>&nbsp;&nbsp;
+            <a href="project_1headers_Terms%20of%20Service.html" id = demo_4 target="_blank">Terms of Service (<i class="glyphicon glyphicon-certificate"></i>)</a>&nbsp;&nbsp;
+            <a href="#" id = demo_5> Privacy policy (<i class="glyphicon glyphicon-registration-mark"></i>)</a>&nbsp;&nbsp;
+        </p>
+    </nav>
+    <button id="account">Your account</button>
+    <button id="orders">Orders</button>
+    <button id="cart">Cart</button>
+    <br>
+    <br>
+    <button id = login>Log In</button>
+    <button id = signup>Sign Up</button>
+    <br>
+    <hr style="height: 20px; color: black">
+</header>
+<main>
+   <form >
+       <div class="Market_trends"><span id="marketing">Market Trends</span><br>
+       <label for="market">
+           <select id="market">
+               <option>Click to select category</option>
+               <option>Farm products</option>
+               <option>Livestock products</option>
+               <option>Poultry products</option>
+           </select>
+       </label>
+           </div>
+   </form>
+
+    <div class="category">
+        <div style="background: sandybrown; ">Categories</div>
+        <button class="button">Farm Products</button>
+        <button class="button">Livestock Products</button>
+        <button class="button">Poultry products</button>
+    </div>
+    <div>
+        <form class="search_button">
+            <label for="search"> Search <i class="fa fa fa-search"></i>
+                <input type="text" id="search" placeholder="Search for anything">
+            </label>
+        </form>
+    </div>
+
+    <div id="flexbox_2" >
+        <div class="collection" >
+            <div style="background: sandybrown">Link with us</div>
+            <a href="https://www.facebook.com/campaign/landing.php?campaign_id=1654945421&extra_1=s%7Cc%7C318719743645%7Ce%7Cfacebook%27%7C&placement=&creative=318719743645&keyword=facebook%27&partner_id=googlesem&extra_2=campaignid%3D1654945421%26adgroupid%3D69104018368%26matchtype%3De%26network%3Dg%26source%3Dnotmobile%26search_or_content%3Ds%26device%3Dc%26devicemodel%3D%26adposition%3D%26target%3D%26targetid%3Dkwd-362360550869%26loc_physical_ms%3D9073682%26loc_interest_ms%3D%26feeditemid%3D%26param1%3D%26param2%3D&gclid=Cj0KCQjwof6WBhD4ARIsAOi65agMPdGBiyHTt-HhYgPaZ5y919YN4JnrYeHkeo4OsJlc99PHtVO4vXgaAkr7EALw_wcB" class="collection-item" target="_blank"><i class="fa fa fa-facebook" id="facebook" style>  Facebook</i></a>
+            <a href="https://twitter.com/?lang=en" class="collection-item" target="_blank"><i class="fa fa fa-twitter" id="twitter">  Twitter</i></a>
+            <a href="https://myaccount.google.com/profile" class="collection-item" target="_blank"><i class="fa fa fa-google-plus" id="google">  Google Plus</i></a>
+            <a href="https://www.instagram.com/accounts/login/" class="collection-item" target="_blank"><i class="fa fa fa-instagram" id="insta">  Instagram</i></a>
+            <a href="https://ke.linkedin.com/" class="collection-item" target="_blank"><i class="fa fa fa-linkedin" id="linked" >  Linked in</i></a>
+        </div>
+    </div>
+
+    <nav>
+    <div class = flexbox>
+        <div >
+            <b style="margin: 50px"><span id="title_1">FARMER/PRODUCER</span></b><br>
+            <i>If you wish to register as a Farmer/producer <br>
+                This is the best platform for you to trade <br>
+                your products online and connect to many<br>
+                buyers across the globe and locally depending <br>
+                on the scale of your produce .
+                Follow the simple instructions to get you <br>
+                registered.<br>
+                <br>
+                    <b>please click the button below to continue</b>
+
+                <button id="flex_1" style="margin: 45px" onclick="customerFunction()">Continue >></button>
+                <br>
+            </i>
+        </div>
+        <div>
+            <b style="margin: 50px"><span id="title_2">INTERMEDIARY</span></b><br>
+            <i>If you wish to register as an intermediary/<br>
+               broker then Agribiz is the best platform for you as <br>
+                Agribiz connects you to a wide range of buyers<br>
+                where you wil be able to connect them to their <br>
+                desired products as you make your profit and <br>
+                various investments from us.<br>
+                <br>
+                <b>Please click the button below to continue<br>
+                    follow the simple instructions to get    <br>
+                    register as a broker</b>
+            </i>
+            <br>
+            <button id="flex_2" style="margin: 24px">Continue >></button>
+        </div>
+        <div>
+            <b style="margin: 60px"><span id="title_3">BUYER</span></b>
+            <br>
+            <i>If you wish to register as a buyer <br>
+            then Agribiz id the trading platform for<br>
+                you as Agribiz connects you to its<br>
+                vast market network and you will be <br>
+                able to make your orders from farmers <br>
+                and brokers directly.<br>
+                You will also be able to advertise your goods<br>
+                if you are a manufacturer of agricultural products<br>
+                through the advertisement tab<br>
+
+                <b>Please click the button below to continue and
+                    get registered as a buyer</b>
+                <br>
+                <button id = flex_3 style="margin: 9px">Continue >></button>
+
+            </i>
+        </div>
+    </div>
+    </nav>
+</main>
+</body>
+<footer >
+    <p id="footer">
+        <span class="container">
+        <i class="fa fa fa-facebook"  ></i>&nbsp;
+        <i class="fa fa fa-twitter"></i>&nbsp;
+        <i class="fa fa fa-google-plus"></i>&nbsp;
+        <i class="fa fa fa-instagram"></i>&nbsp;
+        <i class="fa fa fa-linkedin" ></i>&nbsp;
+
+        </span>
+        <span id="copyright_2" > <i class="fa fa fa-copyright" id="copyright"></i><span class="copyright_text">Copyright of Agribiz Trading Company</span></span>
+    </p>
+</footer>
+</html>

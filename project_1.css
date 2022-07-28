@@ -1,0 +1,171 @@
+#heading{
+    text-align: center;
+    color:lightslategray;
+}
+body{
+    background:tan;
+    margin: 2px;
+    font-family:"Times New Roman",sans-serif;
+}
+*{
+    background-image: url("agriculture image_3.jpg");
+}
+.Market_trends{
+    padding-left: 300px;
+}
+#marketing{
+    border:2px  solid navajowhite;
+    border-radius: 5px;
+    background: sandybrown;
+    padding-right: 100px;
+    font-size: 20px;
+    font-family: "Lucida Bright", serif;
+}
+#demo_1,#demo_2,#demo_3,#demo_4,#demo_5{
+
+    color: green;
+}#orders,#cart,#account{
+    float: right;
+    margin-right: 5px;
+    border: none;
+    background: none;
+ }
+#login{
+    float: right;
+    margin-right: 20px;
+    background: green;
+    border-radius: 10px;
+    box-shadow: 2px 2px 2px 2px black;
+    border: none;
+}
+#signup{
+    float: right;
+    margin-right: 20px;
+    background: yellow;
+    border-radius: 8px;
+    box-shadow: 2px 2px 2px 2px black;
+    border: none;
+}
+#logo{
+    height: 60px;
+    width:60px
+}
+#search{
+
+    justify-content: center;
+    width: 500px;
+}
+.search_button{
+    float: right;
+    padding-right: 50px;
+}
+#market{
+    padding-right: 100px;
+}
+.flexbox{
+    display: flex;
+    padding: 30px;
+}
+.flexbox > div{
+    width: 300px;
+    height: 300px;
+    margin: 50px;
+    border: 2px solid black;
+    background: lightskyblue;
+    border-radius: 5px;
+    box-shadow: 2px 2px 2px 2px turquoise;
+}
+#flexbox_2{
+    display: flex;
+    flex-direction: column;
+    color: white;
+
+}
+.button{
+    display: flex;
+    border-radius: 5px;
+    width: 150px;
+    border-color: lightskyblue;
+    flex-direction: column;
+    height: 40px;
+
+}
+.category{
+    color:black;
+    float: right;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+#flex_1{
+    border-radius: 10px;
+    background: black;
+    color: white;
+}
+#flex_2 {
+    border-radius: 10px;
+    background: black;
+    color: white;
+}
+#flex_3{
+    border-radius: 10px;
+    background: black;
+    color: white;
+}
+#title_1,#title_2,#title_3{
+    background: white;
+    border: 2px solid;
+}
+.collection{
+border: 2px solid black;
+    width: 150px;
+    height: 160px;
+    border-radius: 5px;
+    background: darkgray;
+}
+#twitter{
+    color: blue;
+}
+#facebook{
+    color: blue;
+}
+#linked{
+    color: blue;
+}
+#google{
+    color: blue;
+}
+#insta{
+    color: blue;
+}
+.collection-item{
+    display: flex;
+    flex-direction: column;
+    width: 100px;
+    height: 30px;
+    column-rule: 2px solid black;
+    color: black;
+    font-size: 15px;
+
+}
+main{
+
+}
+
+footer{
+    text-align: center;
+    background: black;
+}
+.container{
+    color: blue;
+    font-size: 20px;
+}
+#copyright{
+    color: hotpink;
+    font-size: 18px;
+}
+.copyright_text{
+    color: darkmagenta;
+}
+
+
