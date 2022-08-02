@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Agribiz trading center</title>
+    <link rel="shortcut icon" href="favicon.ico.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"/>
+    <style>
+        #heading{
+            text-align: center;
+            color:lightslategray;
+        }
+        #demo_1,#demo_2,#demo_3,#demo_4,#demo_5{
+
+            color: green;
+        }
+        #orders,#cart,#account {
+            float: right;
+            margin-right: 5px;
+            border: none;
+            background: none;
+        }
+        .login_buttons{
+            justify-content: center;
+            padding-left: 500px;
+            padding-top: 70px;
+
+        }
+        .except{
+            width: 197px;
+            font-size: 40px;
+            box-shadow:  2px 2px 2px 2px darkgray;
+            background: darkgray;
+            border: none;
+            border-radius: 5px;
+        }
+        #login_password,#login_username{
+            height: 50px;
+            border-radius: 5px;
+            box-shadow:  3px 3px 8px 3px black;
+            background: lightgoldenrodyellow;
+        }
+        #login_submit{
+            margin-left: 70px;
+            width: 70px;
+            height:30px;
+            background: royalblue;
+            border-radius: 5px;
+        }
+        body{
+            background-image: url("agriculture image_3.jpg");
+            background-repeat: repeat-x;
+
+        }
+
+        footer{
+            padding-top: 200px;
+            text-align: center;
+        }
+        .container{
+            color: blue;
+            font-size: 20px;
+
+        }
+        #copyright{
+            color: hotpink;
+            font-size: 18px;
+        }
+        .copyright_text{
+            color: darkmagenta;
+        }
+
+    </style>
+</head>
+<h1 id = heading ><img src="AGRIBIZ_LOGO_2.png" alt=" " style="height: 60px" width="60px"><b><u>AGRIBIZ TRADING CENTER</u></b><img src="AGRIBIZ_LOGO_2.png" alt=""  style="height: 60px" width="60px"></h1>
+<body>
+<header>
+    <nav>
+        <p>
+            <a href="project_1.html" id = demo_1 >Home(<i class="glyphicon glyphicon-home"></i>)&nbsp;&nbsp;</a>
+            <a href="project_1_headers_aboutus.html" id = demo_2 target="_blank">About us (<i class="glyphicon glyphicon-globe"></i>)</a>&nbsp;&nbsp;
+            <a href="project_1_headers_ContactUs.html" id = demo_3 target="_blank">Contact Us (<i class="glyphicon glyphicon-user"></i>)</a>&nbsp;&nbsp;
+            <a href="project_1headers_Terms%20of%20Service.html" id = demo_4 target="_blank">Terms of Service (<i class="glyphicon glyphicon-certificate"></i>)</a>&nbsp;&nbsp;
+            <a href="#" id = demo_5> Privacy policy (<i class="glyphicon glyphicon-registration-mark"></i>)</a>&nbsp;&nbsp;
+        </p>
+    </nav>
+    <button id="account">Your account</button>
+    <button id="orders">Orders</button>
+    <button id="cart">Cart</button>
+    <br>
+    <br>
+</header>
+
+<div class="login_buttons">
+    <form>
+        <button class="except">log in</button><br>
+        <label for="login_username">
+            <input type="text" id="login_username" placeholder="enter your username">
+        </label><br>
+        <label for="login_password">
+            <input type="password" id="login_password" placeholder="enter your password">
+        </label><br>
+        <button type="submit" id="login_submit"> Log in</button>
+    </form>
+</div>
+</body>
+<footer >
+    <p id="footer">
+        <span class="container">
+        <i class="fa fa fa-facebook"  ></i>&nbsp;
+        <i class="fa fa fa-twitter"></i>&nbsp;
+        <i class="fa fa fa-google-plus"></i>&nbsp;
+        <i class="fa fa fa-instagram"></i>&nbsp;
+        <i class="fa fa fa-linkedin" ></i>&nbsp;
+
+        </span>
+        <span id="copyright_2" > <i class="fa fa fa-copyright" id="copyright"></i><span class="copyright_text">Copyright of Agribiz Trading Company</span></span>
+    </p>
+</footer>
+
+</html>

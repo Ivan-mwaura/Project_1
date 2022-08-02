@@ -3,11 +3,29 @@
 <head>
     <meta charset="UTF-8">
     <title>AGRIBIZ TRADING CENTER</title>
+    <link rel="shortcut icon" href="favicon.ico.png">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"/>
     <link rel="stylesheet" href="project_1.css">
     <script src="project_1.js"></script>
+   <script>
+       let parent = document.querySelector(".modal-parent");
+       let button = document.querySelector("#btn");
+       let X  = document.querySelector(".cancel");
+
+       button.addEventListener("click", appear)
+
+       function appear(){
+           parent.style.display = "block";
+       }
+       X.addEventListener("click", disappear)
+
+       function disappear(){
+           parent.style.display = "none";
+       }
+
+   </script>
 </head>
 <h1 id = heading ><img src="AGRIBIZ_LOGO_2.png" alt=" " style="height: 60px" width="60px"><b><u>AGRIBIZ TRADING CENTER</u></b><img src="AGRIBIZ_LOGO_2.png" alt=" " style="height: 60px" width="60px"></h1>
 <body>
@@ -26,8 +44,10 @@
     <button id="cart">Cart</button>
     <br>
     <br>
-    <button id = login>Log In</button>
-    <button id = signup>Sign Up</button>
+    <form>
+    <button id="login"  formtarget="_blank">Log In</button>
+    <button id = "signup" formtarget="_blank">  Sign Up</button>
+    </form>
     <br>
     <hr style="height: 20px; color: black">
 </header>
@@ -36,21 +56,40 @@
        <div class="Market_trends"><span id="marketing">Market Trends</span><br>
        <label for="market">
            <select id="market">
-               <option>Click to select category</option>
-               <option>Farm products</option>
-               <option>Livestock products</option>
-               <option>Poultry products</option>
+               <option value="click to select category">Click to select category</option>
+               <option  value="Farm products">Farm products</option>
+               <option value = "Livestock products">Livestock products</option>
+               <option value="Poultry products">Poultry products</option>
            </select>
        </label>
            </div>
    </form>
 
+    <section>
     <div class="category">
         <div style="background: sandybrown; ">Categories</div>
-        <button class="button">Farm Products</button>
+        <button type="button" class="button" id="btn">Farm Products</button>
         <button class="button">Livestock Products</button>
         <button class="button">Poultry products</button>
     </div>
+    </section>
+
+    <div class="modal-parent">
+        <div class="modal_child">
+            Maize<br>
+            Beans<br>
+            Rice<br>
+            Peas<br>
+            Sugar<br>
+            Vegetables<br>
+            Wheat<br>
+            Fruits<br>
+            Avocados(Export)<br>
+            Groundnuts(Export)<br>
+            <span class="cancel" style="color: blue; background: darkgray">X</span>
+        </div>
+    </div>
+
     <div>
         <form class="search_button">
             <label for="search"> Search <i class="fa fa fa-search"></i>
@@ -84,7 +123,7 @@
                 <br>
                     <b>please click the button below to continue</b>
 
-                <button id="flex_1" style="margin: 45px" onclick="customerFunction()">Continue >></button>
+                <button id="flex_1" style="margin: 45px" >Continue >></button>
                 <br>
             </i>
         </div>
