@@ -1,0 +1,57 @@
+*{
+    background:  url("agriculture image_3.jpg");
+}
+#heading{
+    text-align: center;
+    color:lightslategray;
+    font-size: 40px;
+}
+#form_heading_2{
+    text-align: center;
+}
+#form_heading_1{
+    transform:translate(5%);
+}
+.form_div_parent{
+    position: relative;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+}
+.form_div_child{
+    position: absolute;
+    padding: 40px;
+    transform:translate(400px);
+}
+.forms{
+    border-radius: 5px;
+
+    padding: 4px 4px 4px 4px;
+}
+#submit{
+    border-radius: 4px;
+    box-shadow: 2px 2px 2px 2px black;
+    color: black;
+    transform: translate(110px);
+
+}
+footer{
+    text-align: center;
+    background: black;
+}
+.container{
+    color: blue;
+    font-size: 20px;
+}
+#copyright{
+    color: hotpink;
+    font-size: 18px;
+}
+.copyright_text{
+    color: darkmagenta;
+}
+#Registration{
+    border-radius: 4px;
+}
+

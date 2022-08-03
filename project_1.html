@@ -9,23 +9,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"/>
     <link rel="stylesheet" href="project_1.css">
     <script src="project_1.js"></script>
-   <script>
-       let parent = document.querySelector(".modal-parent");
-       let button = document.querySelector("#btn");
-       let X  = document.querySelector(".cancel");
 
-       button.addEventListener("click", appear)
-
-       function appear(){
-           parent.style.display = "block";
-       }
-       X.addEventListener("click", disappear)
-
-       function disappear(){
-           parent.style.display = "none";
-       }
-
-   </script>
 </head>
 <h1 id = heading ><img src="AGRIBIZ_LOGO_2.png" alt=" " style="height: 60px" width="60px"><b><u>AGRIBIZ TRADING CENTER</u></b><img src="AGRIBIZ_LOGO_2.png" alt=" " style="height: 60px" width="60px"></h1>
 <body>
@@ -45,8 +29,8 @@
     <br>
     <br>
     <form>
-    <button id="login"  formtarget="_blank">Log In</button>
-    <button id = "signup" formtarget="_blank">  Sign Up</button>
+    <button id="login" onclick="location.href = 'log_in.html'" formtarget="_blank">Log In</button>
+    <button id = "signup" onclick = "location.href = 'sign_up.html'" formtarget="_blank">  Sign Up</button>
     </form>
     <br>
     <hr style="height: 20px; color: black">
@@ -56,11 +40,19 @@
        <div class="Market_trends"><span id="marketing">Market Trends</span><br>
        <label for="market">
            <select id="market">
-               <option value="click to select category">Click to select category</option>
-               <option  value="Farm products">Farm products</option>
-               <option value = "Livestock products">Livestock products</option>
-               <option value="Poultry products">Poultry products</option>
+               <option value="Click to select category">Click to select category</option>
+               <option  value="Farm products" class="site" >Farm products</option>
+               <option value = "Livestock products" class="site" >Livestock products</option>
+               <option value="Poultry products" class="site">Poultry products</option>
            </select>
+           <button class="search_site" onclick="getSite()">Search</button>
+           <script>
+              let select =  document.getElementsByClassName("site");
+              let value = select.options[select.selectedIndex].value;
+              function getSite(){
+                open("http://kamis.kilimo.go.ke/")
+             }
+           </script>
        </label>
            </div>
    </form>
@@ -123,10 +115,16 @@
                 <br>
                     <b>please click the button below to continue</b>
 
-                <button id="flex_1" style="margin: 45px" >Continue >></button>
+                <button id="flex_1" onclick="getFarmer()"  style="margin: 45px" >Continue >></button>
                 <br>
+                <script>
+                    function getFarmer(){
+                        location.href = "farmer.html";
+                    }
+                </script>
             </i>
         </div>
+
         <div>
             <b style="margin: 50px"><span id="title_2">INTERMEDIARY</span></b><br>
             <i>If you wish to register as an intermediary/<br>
@@ -141,7 +139,13 @@
                     register as a broker</b>
             </i>
             <br>
-            <button id="flex_2" style="margin: 24px">Continue >></button>
+            <button id="flex_2" onclick="getBroker()" style="margin: 24px">Continue >></button>
+            <br>
+            <script>
+                function getBroker(){
+                    location.href = "intermediary.html";
+                }
+            </script>
         </div>
         <div>
             <b style="margin: 60px"><span id="title_3">BUYER</span></b>
@@ -159,8 +163,12 @@
                 <b>Please click the button below to continue and
                     get registered as a buyer</b>
                 <br>
-                <button id = flex_3 style="margin: 9px">Continue >></button>
-
+                <button id = flex_3 onclick="getBuyer()" style="margin: 9px">Continue >></button>
+                <script>
+                    function getBuyer(){
+                        location.href = "buyer.html";
+                    }
+                </script>
             </i>
         </div>
     </div>
